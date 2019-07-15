@@ -1,0 +1,32 @@
+{
+  "name": "@urepairpc/release",
+  "version": "1.0.0",
+  "main": "dist/app",
+  "scripts": {
+    "start": "tsc && node dist/app",
+    "lint": "tslint src/**/*",
+    "lint:fix": "npm run lint -- --fix",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uRepairPC/release.git"
+  },
+  "author": "Alexey Khrushch, alexeykhr@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uRepairPC/release/issues"
+  },
+  "homepage": "https://github.com/uRepairPC/release#readme",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "@types/shelljs": "^0.8.5",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
