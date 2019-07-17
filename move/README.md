@@ -14,9 +14,6 @@
 - [Demo](https://demo.urepairpc.com/)
 - [Docs](https://docs.urepairpc.com/)
 
-## Quick Start
-TODO
-
 ## Introducing
 Internal system with which you can manage applications, users, equipment.
 Manage roles and access to different sections on the site.
