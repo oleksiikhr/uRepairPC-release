@@ -13,6 +13,7 @@ export default class Server extends Repository implements IRepository {
 
   public run () {
     this.shellExecute();
+    this.moveChangelog(OUTPUT_DIR + path.sep + 'CHANGELOG.md');
   }
 
   private shellExecute () {
@@ -22,7 +23,6 @@ export default class Server extends Repository implements IRepository {
     // Mkdir
     Cmd.mkdir(OUTPUT_DIR + path.sep + 'modules');
     Cmd.mkdir(OUTPUT_DIR + path.sep + 'changelog');
-    this.moveChangelog(OUTPUT_DIR + path.sep + 'CHANGELOG.md');
 
     // Remove unused folder/files
     Cmd.rm(OUTPUT_DIR + path.sep + '.git');
