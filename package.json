@@ -4,7 +4,7 @@
   "main": "dist/app",
   "scripts": {
     "start": "tsc && node dist/app",
-    "lint": "tslint src/**/*",
+    "lint": "tslint src/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
     "release": "standard-version"
   },
