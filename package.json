@@ -1,9 +1,9 @@
 {
   "name": "@urepairpc/release",
   "version": "1.0.0",
-  "main": "dist/app",
+  "main": "/app",
   "scripts": {
-    "start": "tsc && node dist/app",
+    "start": "ts-node src/app",
     "lint": "tslint src/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
     "release": "standard-version"
@@ -19,13 +19,13 @@
   },
   "homepage": "https://github.com/uRepairPC/release#readme",
   "dependencies": {
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "ts-node": "^8.3.0"
   },
   "devDependencies": {
     "@types/node": "^12.6.9",
     "@types/shelljs": "^0.8.5",
     "ts-jest": "^24.0.2",
-    "ts-node": "^8.3.0",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
   }
