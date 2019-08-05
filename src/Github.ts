@@ -3,7 +3,7 @@ import { INPUT_DIR, ORG_NAME, OUTPUT_DIR } from './config';
 
 export default class Github {
   public static readonly URL = 'https://github.com';
-  public static readonly BRANCH = 'dev';
+  public static readonly BRANCH = 'preview';
 
   public static publish (): void {
     const msg = new Date().toLocaleDateString('en-US', {
@@ -16,7 +16,7 @@ export default class Github {
     Cmd.exec('git init');
     Cmd.exec('git add .');
     Cmd.exec(`git commit -m ${msg}`);
-    Cmd.exec(`git push --force-with-lease git@github.com:${ORG_NAME}/${ORG_NAME}.git master:${Github.BRANCH}`);
+    Cmd.exec(`git push --force git@github.com:${ORG_NAME}/${ORG_NAME}.git master:${Github.BRANCH}`);
   }
 
   public repositoryName: string;
